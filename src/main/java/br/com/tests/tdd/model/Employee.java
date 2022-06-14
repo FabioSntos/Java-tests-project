@@ -1,4 +1,4 @@
-package br.com.alura.tdd.model;
+package br.com.tests.tdd.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -7,6 +7,11 @@ public class Employee {
 
 	private String nome;
 	private LocalDate dataAdmissao;
+
+	public void setSalario(BigDecimal salario) {
+		this.salario = salario;
+	}
+
 	private BigDecimal salario;
 
 	public Employee(String nome, LocalDate dataAdmissao, BigDecimal salario) {
