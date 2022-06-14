@@ -21,7 +21,7 @@ class ReajusteServiceTest {
     }
 
     @Test
-    public void readjustmentShouldBe3percentWhenPerformanceIsGood() {
+    public void readjustmentShouldBe15percentWhenPerformanceIsGood() {
         ReajusteService service = new ReajusteService();
         Employee employee = new Employee("Fabio", LocalDate.now(), new BigDecimal(1000));
 
@@ -30,7 +30,7 @@ class ReajusteServiceTest {
     }
 
     @Test
-    public void readjustmentShouldBe3percentWhenPerformanceIsGreat() {
+    public void readjustmentShouldBe20percentWhenPerformanceIsGreat() {
         ReajusteService service = new ReajusteService();
         Employee employee = new Employee("Fabio", LocalDate.now(), new BigDecimal(1000));
 
